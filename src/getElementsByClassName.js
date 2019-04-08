@@ -13,7 +13,7 @@ var getElementsByClassName = function(className, node) {
     //If the node has the className, then push it into a results array
     results.push(node);
   }
-    //If the node has children, check to see if it contains className recursively
+  //If the node has children, check to see if it contains className recursively
   for (var i = 0; i < node.children.length; i++) {
     results = results.concat(getElementsByClassName(className, node.children[i]));
   }
